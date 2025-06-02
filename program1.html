@@ -148,7 +148,7 @@
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.2);
       z-index: 100;
-      width: 90%;
+      width: 80%;
       margin: 0 auto;
       animation: slideUp 0.3s ease;
     }
@@ -160,13 +160,14 @@
     .number-buttons h3 {
       margin-bottom: 15px;
       color: var(--primary-color);
+      font-size: 1rem;
     }
 
     .number-btn {
       display: block;
       width: 100%;
-      padding: 12px;
-      margin-bottom: 10px;
+      padding: 10px;
+      margin-bottom: 8px;
       border-radius: 8px;
       background-color: #f5f5f5;
       color: var(--text-color);
@@ -174,7 +175,8 @@
       font-weight: 500;
       transition: all 0.2s ease;
       border: none;
-      font-size: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
     }
 
     .number-btn:last-child {
@@ -201,7 +203,7 @@
       left: 10px;
       background: none;
       border: none;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: var(--light-text);
       cursor: pointer;
     }
@@ -249,6 +251,11 @@
         height: 38px;
         font-size: 1.1rem;
       }
+
+      .number-buttons {
+        width: 85%;
+        padding: 12px;
+      }
     }
 
     @media (max-width: 350px) {
@@ -276,21 +283,15 @@
       .program-link {
         height: 120px;
       }
-    }
 
-    @media (max-height: 500px) and (orientation: landscape) {
-      body {
-        padding: 5px;
-        min-height: auto;
+      .number-buttons {
+        width: 90%;
+        padding: 10px;
       }
-      
-      .container {
-        padding: 15px;
-        max-width: 90%;
-      }
-      
-      .programs-grid {
-        grid-template-columns: repeat(4, 1fr);
+
+      .number-btn {
+        padding: 8px;
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -317,7 +318,7 @@
       <a href="LINK_TO_PROGRAM5" class="program-link">
         <img src="program5.png" alt="البرنامج الخامس" class="program-img">
       </a>
-    <!--  <a href="LINK_TO_PROGRAM6" class="program-link"> 
+   <!--   <a href="LINK_TO_PROGRAM6" class="program-link">
         <img src="program6.png" alt="البرنامج السادس" class="program-img">
       </a> -->
     </div>
@@ -350,10 +351,10 @@
     </button>
     <h3>اختر رقم للتواصل عبر واتساب</h3>
     <a href="https://wa.me/213552152893" class="number-btn whatsapp-btn">
-      <i class="fab fa-whatsapp"></i> 0552152893
+      الرقم1
     </a>
     <a href="https://wa.me/213667967585" class="number-btn whatsapp-btn">
-      <i class="fab fa-whatsapp"></i> 0667967585
+      الرقم2
     </a>
   </div>
 
@@ -364,10 +365,10 @@
     </button>
     <h3>اختر رقم للاتصال</h3>
     <a href="tel:213552152893" class="number-btn call-btn">
-      <i class="fas fa-phone"></i> 0552152893
+      الرقم1
     </a>
     <a href="tel:213667967585" class="number-btn call-btn">
-      <i class="fas fa-phone"></i> 0667967585
+      الرقم2
     </a>
   </div>
 
